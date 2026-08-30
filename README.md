@@ -16,9 +16,7 @@ Rotating the MPU6050 changes the view direction inside a 360-degree image captur
 
 ### Video demonstration
 
-[![Click to watch the IMU-based panoramic camera demonstration](media/videos/final-demo.png)](media/videos/final-demo.mp4)
-
-_Click the image above to watch the demonstration video._
+[![Click to watch the IMU-based panoramic camera demonstration](media/videos/final-demo.jpg)](media/videos/final-demo.mp4)
 
 ## Project deliverables
 
