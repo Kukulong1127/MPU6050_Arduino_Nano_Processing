@@ -1,7 +1,8 @@
 # IMU-Based Head Tracking for a Panoramic Virtual Environment
 
 **DH2323 Computer Graphics and Interaction — KTH Royal Institute of Technology**  
-**Author:** Keyuan (Charles) Zhang
+**Author:** Keyuan (Charles) Zhang  
+**Supervisor:** [Prof. Christopher Edward Peters](https://www.kth.se/profile/chpeters)
 
 This project investigates whether a low-cost MPU6050 inertial measurement unit (IMU) and an Arduino Nano can provide real-time camera control in a virtual panoramic environment. The sensor measures angular velocity, the Arduino sends the readings over USB serial, and a Processing application integrates the measurements into camera yaw and pitch.
 
