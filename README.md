@@ -14,7 +14,7 @@ The project focuses on the full interaction pipeline and its practical challenge
 
 Rotating the MPU6050 changes the view direction inside a 360-degree image captured with a smartphone. The final application supports three processing modes, a camera reset, a 30-second stationary drift test, and screenshot capture.
 
-> **Video demonstration:** Add the final recording as `media/videos/final-demo.mp4`, then replace this note with a clickable thumbnail or a link to the uploaded GitHub video. GitHub README files do not reliably play repository MP4 files inline, so a GIF or linked preview image is usually the clearest option.
+![Panoramic room viewed through the Processing application](media/videos/final-demo.mp4)
 
 ## Project deliverables
 
