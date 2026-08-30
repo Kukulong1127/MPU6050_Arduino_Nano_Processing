@@ -14,7 +14,7 @@ The project focuses on the full interaction pipeline and its practical challenge
 
 Rotating the MPU6050 changes the view direction inside a 360-degree image captured with a smartphone. The final application supports three processing modes, a camera reset, a 30-second stationary drift test, and screenshot capture.
 
-[![IMU-based panoramic camera demonstration](media/videos/final-demo.gif)](media/videos/final-demo.gif)
+[![IMU-based panoramic camera demonstration](media/videos/final-demo.png)](media/videos/final-demo.png)
 
 ## Project deliverables
 
