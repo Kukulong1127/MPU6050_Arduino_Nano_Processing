@@ -51,7 +51,7 @@ void setup() {
   myPort = new Serial(this, Serial.list()[0], 115200);
   myPort.bufferUntil('\n');
 
-  panorama = loadImage("my_room.jpg");
+  panorama = loadImage("my_room_lappis.jpg");
 
   sphereView = createShape(SPHERE, 1000);
   sphereView.setTexture(panorama);
