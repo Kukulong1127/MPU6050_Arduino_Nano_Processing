@@ -10,13 +10,27 @@ The project focuses on the full interaction pipeline and its practical challenge
 
 ## Final demonstration
 
-![Panoramic room viewed through the Processing application](media/images/panorama-demo.png)
+<p align="center">
+  <img src="media/images/panorama-demo.png"
+       alt="Panoramic room in Processing"
+       width="650">
+</p>
 
 Rotating the MPU6050 changes the view direction inside a 360-degree image captured with a smartphone. The final application supports three processing modes, a camera reset, a 30-second stationary drift test, and screenshot capture.
 
 ### Video demonstration
 
-[![Click to watch the IMU-based panoramic camera demonstration](media/videos/final-demo.jpg)](media/videos/final-demo.mp4)
+<p align="center">
+  <a href="media/videos/final-demo.mp4">
+    <img src="media/videos/final-demo.jpg"
+         alt="Click to watch the demonstration"
+         width="500">
+  </a>
+</p>
+
+<p align="center">
+  <em>Click the image to watch the demonstration video.</em>
+</p>
 
 ## Project deliverables
 
@@ -27,7 +41,11 @@ Rotating the MPU6050 changes the view direction inside a 360-degree image captur
 
 ## System overview
 
-![System architecture from physical motion to virtual camera control](media/images/system-architecture.png)
+<p align="center">
+  <img src="media/images/system-architecture.png"
+       alt="System Overview"
+       width="500">
+</p>
 
 The interaction pipeline is:
 
@@ -40,7 +58,11 @@ The interaction pipeline is:
 
 ## Hardware
 
-![Arduino Nano connected to the MPU6050](media/images/hardware-setup.png)
+<p align="center">
+  <img src="media/images/hardware-setup.png"
+       alt="Hardware Setup between Arduino Nano and MPU5060"
+       width="500">
+</p>
 
 ### Components
 
@@ -129,43 +151,6 @@ The deadband produced the main improvement in stationary stability. EMA smoothin
 
 Responsiveness and movement smoothness were evaluated qualitatively because no external motion-capture or high-speed latency measurement system was available.
 
-## Progress blog
-
-### Stage 1 — Project definition
-
-The initial goal was to build an interaction system in which head motion controls the camera inside a simplified driving cockpit. The main risks identified were sensor noise, yaw drift, integration between physical hardware and Processing, and the limited project schedule.
-
-**Outcome:** The scope was narrowed to a panoramic proof-of-concept environment. This preserved the head-tracking and rendering challenges while avoiding the time cost of building a detailed 3D cockpit.
-
-### Stage 2 — Sensor and serial communication
-
-The MPU6050 was connected to the Arduino Nano through I2C. A first firmware version verified that all three gyroscope axes could be read and converted to degrees per second. The output format was then simplified to comma-separated values for Processing.
-
-**Outcome:** Stable serial transmission at 115200 baud with an approximate 10 ms loop delay.
-
-### Stage 3 — Initial 3D rotation prototype
-
-Before controlling a camera, a simple cuboid was rendered in Processing. Integrated X, Y, and Z gyroscope values controlled the object's rotations. This isolated and verified the complete sensor-to-graphics pipeline.
-
-**Outcome:** Physical sensor rotation produced corresponding real-time 3D rotation.
-
-### Stage 4 — Panoramic camera control
-
-A personal 360-degree room image was mapped to the inside of a sphere. The virtual camera was placed at the center, with gyroscope Z mapped to yaw and gyroscope X mapped to pitch.
-
-**Outcome:** The MPU6050 could be used to look left/right and up/down inside the recorded room.
-
-### Stage 5 — Filtering and interaction controls
-
-Initial testing showed visible drift even when the sensor was stationary. A 1.0 degrees/s deadband, optional EMA smoothing, pitch limits, and manual recentering were added. Runtime controls were also added to switch methods without restarting the sketch.
-
-**Outcome:** A controllable evaluation application with raw, deadband, and smoothed modes.
-
-### Stage 6 — Evaluation
-
-A repeatable 30-second stationary test was implemented in Processing. The application resets the view, times the test, and prints the resulting yaw and pitch drift.
-
-**Outcome:** The deadband reduced stationary drift from tens of degrees to nearly zero in the recorded test.
 
 ## Running the project
 
@@ -187,7 +172,7 @@ A repeatable 30-second stationary test was implemented in Processing. The applic
 ### 3. Run the panoramic application
 
 1. Open `processing/my_room_test/my_room_test.pde` in Processing.
-2. Keep `my_room.jpg` in the same sketch folder.
+2. Keep `my_room_lappis.jpg` in the same sketch folder.
 3. Select the correct serial-port index in the code if necessary.
 4. Run the sketch.
 
@@ -215,7 +200,7 @@ A repeatable 30-second stationary test was implemented in Processing. The applic
 │   │   └── serial_input_MPU6050.pde
 │   └── my_room_test/
 │       ├── my_room_test.pde
-│       └── my_room.jpg
+│       └── my_room_lappis.jpg
 ├── media/
 │   ├── images/
 │   └── videos/
