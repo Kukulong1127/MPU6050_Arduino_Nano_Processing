@@ -205,8 +205,8 @@ Responsiveness and movement smoothness were evaluated qualitatively because no e
 │   ├── images/
 │   └── videos/
 └── docs/
-    ├── project-report.pdf
-    └── project-specification.pdf
+    ├── DH2323_CGI_Project_Report_Keyuan_Z.pdf
+    └── DH2323_CGI_Project_Specification_Keyuan_Z.pdf
 ```
 
 ## Limitations and future work
@@ -226,4 +226,4 @@ Responsiveness and movement smoothness were evaluated qualitatively because no e
 - Arduino, Processing, and their standard libraries were used to implement the prototype.
 - AI tools were used to assist with language editing, code discussion, and documentation structure. The project design, implementation, testing, results, and final verification remain the author's work.
 
-For the full theoretical discussion, evaluation method, and references, see the [project report](docs/project-report.pdf).
+For the full theoretical discussion, evaluation method, and references, see the [project report](docs/DH2323_CGI_Project_Report_Keyuan_Z.pdf).
